@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mysterious Escape Room - Athens</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Escape Room Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Welcome to the Mysterious Escape Room in Athens</h1>
+        <p>Are you ready to unravel the mystery and escape?</p>
+        <button onclick="scrollToSection('booking')">Book Now</button>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Discover the ultimate escape room experience in Athens. Our escape room challenges your mind and senses, providing an unforgettable adventure. Perfect for friends, families, and team building activities.</p>
+    </section>
+
+    <section id="features">
+        <h2>Features</h2>
+        <ul>
+            <li>Immersive Storylines</li>
+            <li>Challenging Puzzles</li>
+            <li>Realistic Set Design</li>
+            <li>Friendly Staff</li>
+            <li>Suitable for All Ages</li>
+        </ul>
+    </section>
+
+    <section id="booking">
+        <h2>Book Your Adventure</h2>
+        <p>Ready to take on the challenge? Book your escape room experience now!</p>
+        <form action="booking.html">
+            <label for="date">Choose a date:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="time">Choose a time:</label>
+            <input type="time" id="time" name="time" required>
+            <label for="group-size">Group size:</label>
+            <input type="number" id="group-size" name="group-size" min="1" max="10" required>
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Get in touch with us!</p>
+        <p>Email: <a href="mailto:info@escaperoomathens.com">info@escaperoomathens.com</a></p>
+        <p>Phone: <a href="tel:+302101234567">+30 210 123 4567</a></p>
+        <p>Address: 123 Mystery St, Athens, Greece</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mysterious Escape Room Athens. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
